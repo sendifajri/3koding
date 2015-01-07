@@ -8,7 +8,7 @@
 • Sumayyah<br>
 </br>
 <br>
-<h3>Credits</h3><br>
+<h3>Credits</h3>
 • Boostrap<br>
 • Jquery.js<br>
 • Animated.css<br>
