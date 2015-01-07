@@ -1,5 +1,5 @@
 # 3koding.github.io
-<b><u>Team Developers</u></b><br>
+<u><b>Team Developers</b</u>><br>
 • Ali Nursalim<br>
 • Hamzah Asadullah<br>
 • Hari Rifkriyadi<br>
