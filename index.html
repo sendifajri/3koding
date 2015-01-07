@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<title>Struktur Data</title>
+</head>
+<body>
+    
+    <a id="menu-toggle" href="#" class="btn btn-kel toggle"><i class="glyphicon glyphicon-user"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light pull-right toggle"><i class="glyphicon glyphicon-remove btn-md"></i></a>
+            <li>
+                <h4 style="color:white;margin-bottom:25px;">Team Developers</h4>
+            </li>
+            <li>
+                <a href="#">Ali Nursalim</a>
+            </li>
+            <li>
+                <a href="#">Hamzah Asadullah</a>
+            </li>
+            <li>
+                <a href="#">Hari Rifkiriyadi</a>
+            </li>
+            <li>
+                <a href="#">Octaviani H</a>
+            </li>
+            <li>
+                <a href="#">Sendi Fajri R</a>
+            </li>
+            
+            <li>
+                <a href="#">Sumayah</a>
+            </li>
+        </ul>
+    </nav>
+    
+<div class="header">
+<div class="jumbotron" >
+<div class="text-vertical-center">
+<div class="container">
+
+<div id="postfix">
+<p id="stack">AB+</p>
+    <button type="button" id="btn-table" class="btn btn-dark btn-responsive">View Table</button>
+    <button id="btnReset" class="btn btn-dark btn-responsive">Reset</button>
+    </div>
+    
+<div id="table1">
+<p id="tabel">&lt; table &gt;</p>    
+    <button id="btn-postfix" type="button" class="btn btn-dark btn-responsive">Postfix</button>
+    </div>
+    </div>
+
+</div></div>
+
+
+<div class="convert">
+<div class="container">
+<div class="input-group">
+<input type="text" id="infixVal" class="form-control" placeholder="Enter infix expression"/>
+<span class="input-group-btn">
+<button id="conv" class="btn btn-conv" onclick="main()">Convert</button>
+</span>
+</div>
+<div id="idAlert1" class="alert alert-danger">
+<button type="button" class="close" data-dismiss="alert">
+<span aria-hidden="true">&times;</span>
+</button>
+   <strong>Please</strong> Enter infix expression
+</div>    
+<div id="idAlert2" class="alert alert-warning">
+<button type="button" class="close" data-dismiss="alert">
+<span aria-hidden="true">&times;</span>
+</button>
+   <strong>Warning!</strong> check your infix expression.
+</div>
+</div>
+</div>
+</div>
+</div>  
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/intopos.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.fittext.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        
+    $(document).ready(function(){
+        $("#idAlert1").hide();
+        $("#idAlert2").hide();    
+        $("#table1").hide();
+        
+        $("#btn-table").click(function(){
+        $("#table1").addClass('animated bounceInUp');
+        $("#table1").show();
+        $("#postfix").hide();
+  });
+        
+  $("#btn-postfix").click(function(){
+    $("#postfix").addClass('animated bounceInDown');
+    $("#postfix").show();
+    $("#table1").hide();
+
+  });
+      $(".close").click(function(){
+      $("#idAlert1").hide();
+      $("#idAlert2").hide();
+        $("#infixVal").val(""); 
+        $("#stack").text("AB+");
+        $("#tabel").text("< table >");   
+   });
+    $("#infixVal").click(function(){
+	$("#postfix").removeClass('animated bounceInDown');
+       $("#idAlert1").hide();
+       $("#idAlert2").hide();                           
+        });
+});
+      
+        
+        $("#btnReset").click(function(){
+        $("#infixVal").val(""); 
+        $("#stack").text("AB+");
+        $("#tabel").text("< table >");    
+        $("#idAlert1").hide();
+        $("#idAlert2").hide();        
+        });
+                       
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+       
+              
+    </script>
+</html>
