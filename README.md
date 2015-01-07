@@ -1,6 +1,5 @@
 # 3koding.github.io
-<b>Team Developers</b><br>
-<hr>
+<h3>Team Developers<h3>
 • Ali Nursalim<br>
 • Hamzah Asadullah<br>
 • Hari Rifkriyadi<br>
@@ -9,8 +8,7 @@
 • Sumayyah<br>
 </br>
 <br>
-<b>Credits</b><br>
-<hr>
+<h3>Credits</h3><br>
 • Boostrap<br>
 • Jquery.js<br>
 • Animated.css<br>
