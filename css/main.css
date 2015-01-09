@@ -6,19 +6,6 @@ html,body{
 body{
 	background-color:#F4F4F4;
 }
-.sidebar-nav .download{
-	background-color:#34AADC;
-}
-.sidebar-nav .downloadA{
-	background-color:#FF3A2D;
-}
-.sidebar-nav .download a{
-	color:#f0f0f0;
-}
-.sidebar-nav .downloadA a{
-	color:#f0f0f0;
-}
-
 td{
  vertical-align: bottom;   
 }
