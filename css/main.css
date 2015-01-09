@@ -7,12 +7,15 @@ body{
 	background-color:#F4F4F4;
 }
 .sidebar-nav .download{
-	background-color:#0066FF;
+	background-color:#34AADC;
 }
 .sidebar-nav .downloadA{
-	background-color:#DC143C;
+	background-color:#FF3A2D;
 }
 .sidebar-nav .download a{
+	color:#f0f0f0;
+}
+.sidebar-nav .downloads a{
 	color:#f0f0f0;
 }
 
