@@ -9,6 +9,9 @@ body{
 .sidebar-nav .download{
 	background-color:#0066FF;
 }
+.sidebar-nav .downloadA{
+	background-color:#DC143C;
+}
 .sidebar-nav .download a{
 	color:#f0f0f0;
 }
