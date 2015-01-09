@@ -118,6 +118,10 @@ td{
     line-height: 40px;
 }
 
+.sidebar-nav li h4 {
+    display: block;
+    text-decoration: none;
+}
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
